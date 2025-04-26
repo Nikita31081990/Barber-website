@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#banner {
+  background-image: url("../images/banner.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+#overlay {
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+#navbar {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  display: flex;
+}
+.navbar-50 {
+  width: 49.9%;
+  float: left;
+  margin: 0 7%;
+}
+.menulist ul {
+  text-align: right;
+}
+.menulist ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+.menulist ul li a {
+  color: white;
+  text-decoration: none;
+}
+.banner-text {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-text h2 {
+  font-size: 50px;
+}
+.banner-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.banner-text button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  /* font-weight: bold; */
+}
+.banner-text button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.section {
+  width: 100%;
+  margin-top: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(215, 215, 218, 1) 100%
+  );
+  text-align: center;
+}
+.section h2 {
+  font-size: 50px;
+}
+.section p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.course-sub {
+  width: 86%;
+  margin: 0 7%;
+  display: flex;
+  padding: 50px 0;
+}
+.course-28 {
+  width: 33%;
+  /* border: 1px solid red; */
+  float: left;
+  padding: 30px;
+  margin: 20px;
+  background-color: #f8ede3;
+  text-align: justify;
+  transition: 1s;
+}
+.course-28:hover {
+  box-shadow: -1px 2px 15px 0px rgba(255, 0, 0, 0.75);
+}
+.course-28 h3 {
+  text-align: center;
+}
+.campus-33 {
+  width: 33.3%;
+  padding: 20px;
+  position: relative;
+}
+.campus-33 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.testimonial-sub {
+  width: 45%;
+  background-color: #f8ede3;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+}
+.testimonial-sub img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.banner2 {
+  background-image: url(../images/banner2.jpg);
+  width: 85%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  margin: 30px 0 30px 130px;
+  position: relative;
+}
+.banner2-text {
+  /* color: white; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner2-text button {
+  margin-left: 150px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .banner-text button {
+    font-size: 15px;
+  }
+  .course-sub {
+    display: block;
+  }
+  .course-28 {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+  }
+  #Course h2 {
+    font-size: 30px;
+  }
+  .section h2 {
+    font-size: 30px;
+  }
+  .campus-33 {
+    width: 90%;
+  }
+}
